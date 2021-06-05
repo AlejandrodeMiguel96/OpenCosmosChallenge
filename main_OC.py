@@ -138,7 +138,7 @@ ax4_2.grid()
 ax4_3 = fig4.add_subplot(311)
 r = np.array([])
 for i in range(len(t)):
-    aux = np.linalg.norm(sol.y[0:2, i])
+    aux = np.linalg.norm(sol.y[0:3, i])
     r = np.append(r, aux)
 for i in t_illum_vector/T:
     line = ax4_3.axvline(i, alpha=0.3, color='yellow')
